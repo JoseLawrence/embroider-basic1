@@ -7,6 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('energy');
+  this.route('home-services');
+  this.route('help-and-support');
 });
 
 export default Router;
