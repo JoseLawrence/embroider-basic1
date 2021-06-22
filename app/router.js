@@ -7,8 +7,15 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('energy');
-  this.route('home-services');
+  this.route('energy', function() {
+    this.route('energy-one');
+    this.route('energy-two');
+  });
+  this.route('home-services', function() {
+    this.route('hs-one');
+    this.route('hs-two');
+    this.route('hs-three');
+  });
   this.route('help-and-support');
 });
 
